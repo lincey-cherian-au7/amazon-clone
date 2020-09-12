@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Header from './Header'
+import Home from './Home'
+
 function App() {
   return (
     <Router>
@@ -10,6 +12,7 @@ function App() {
         <Switch>
           {/* Here we can define so many routes */}
           <Route path='/checkout'>
+            <Header/>
           <h1>Checkout</h1>
           </Route>
           <Route path='/login'>
@@ -17,7 +20,7 @@ function App() {
           </Route>
           <Route path='/'>
             <Header/>
-            <h1>Home</h1>
+            <Home/>
           </Route>
         </Switch>
       </div>
